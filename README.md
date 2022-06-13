@@ -1,1 +1,6 @@
-# ARDS
+# ARDS detection and interpreting model behavior
+
+ARDS or [Acute respiratory distress syndrome](https://www.uptodate.com/contents/acute-respiratory-distress-syndrome-clinical-features-diagnosis-and-complications-in-adults) is a difficult disease both to define and also to predict. The definition of ARDS we will be using is the Berlin Criteria (Lung imaging shows Bilateral Infiltrates and PaO2/FiO2 is < 300). We are going to design and train an algorithm to predict the onset of ARDS before it occurs as best you can using the limited data in this sample dataset. The target labels are provided for you for each patient encounter.
+The notebook contains the pipeline to preprocess data, create the training set cohort and use SHAP to interpret model outcomes. We have also used the Microsoft package __Explainable Boosting Machine (EBM)__ for debugging results. 
+
+Explainable Boosting Machine (EBM) is a tree-based, cyclic gradient boosting Generalized Additive Model with automatic interaction detection. EBMs are often as accurate as state-of-the-art blackbox models while remaining completely interpretable. Although EBMs are often slower to train than other modern algorithms, EBMs are extremely compact and fast at prediction time (https://interpret.ml/docs/ebm.html)
